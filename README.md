@@ -11,6 +11,7 @@ A library that reads app's json-formatted config files and wipes out comments
 # Example
 Json-formmated config file is:
 {
+
 	// all field.
 	"timeout":100, // time out in http
 	/*"ip":"127.0.0.1",
@@ -21,6 +22,7 @@ Json-formmated config file is:
 
 Your AppConfig struct is defined as:
 type MyConf struct {
+
 	Timeout int `json:"timeout"`
 	Ip string `json:"ip"`
 	Port int `json:"port"`
