@@ -10,7 +10,6 @@ A library that reads app's json-formatted config files and wipes out comments
 
 # Example
 Json-formmated config file is:
-
 {
 	// all field.
 	"timeout":100, // time out in http
@@ -21,7 +20,6 @@ Json-formmated config file is:
 }
 
 Your AppConfig struct is defined as:
-
 type MyConf struct {
 	Timeout int `json:"timeout"`
 	Ip string `json:"ip"`
@@ -32,5 +30,4 @@ type MyConf struct {
 }
 
 After jsonconf.Unmarshal(), print(myConf) gets this:
-
 {100  0 127.0.0.1:6379 127.0.0.1:3306 }
