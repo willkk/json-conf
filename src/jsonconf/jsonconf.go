@@ -26,6 +26,7 @@ func Unmarshal(filepath string, v interface{}) error  {
 		if err != nil {
 			if err != io.EOF {
 				log.Fatalf("Read line failed. err=%s.", err)
+				return err
 			}
 			break
 		}
